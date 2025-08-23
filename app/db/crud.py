@@ -15,7 +15,7 @@ def create_marca(db: Session, marca: schemas.MarcaCreate):
         pais_origen=marca.pais_origen,
         clase_niza=marca.clase_niza,
         categoria=marca.categoria,
-        numero_Registro=marca.numero_Registro,
+        numero_registro=marca.numero_registro,
         fecha_registro=marca.fecha_registro,
         usuario_creacion=marca.usuario_creacion,
         usuario_actualizacion=marca.usuario_actualizacion,
@@ -37,7 +37,7 @@ def update_marca(db: Session, marca_id: int, marca: schemas.MarcaUpdate):
         db_marca.pais_origen = marca.pais_origen
         db.clase_niza = marca.clase_niza
         db_marca.categoria = marca.categoria
-        db_marca.numero_Registro = marca.numero_Registro
+        db_marca.numero_registro = marca.numero_registro
         db_marca.fecha_registro = marca.fecha_registro
         db_marca.usuario_creacion = marca.usuario_creacion
         db_marca.usuario_actualizacion = marca.usuario_actualizacion

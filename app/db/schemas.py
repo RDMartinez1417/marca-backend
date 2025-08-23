@@ -9,7 +9,7 @@ class MarcaBase(BaseModel):
     pais_origen: Optional[str] = None
     clase_niza: Optional[int] = None
     categoria: Optional[str] = None
-    numero_Registro: Optional[str] = None
+    numero_registro: Optional[str] = None
     fecha_registro: Optional[date] = None
     usuario_creacion: Optional[str] = None
     usuario_actualizacion: Optional[str] = None
@@ -30,3 +30,4 @@ class Marca(MarcaBase):
 
     class Config:
         orm_mode = True
+
