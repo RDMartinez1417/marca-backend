@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 from datetime import datetime, date
-from typing import Optional
+from typing import Optional,List
 
 class MarcaBase(BaseModel):
     nombre: str
@@ -30,4 +30,6 @@ class Marca(MarcaBase):
 
     class Config:
         orm_mode = True
-
+class MarcaPaginatedResponse(BaseModel):
+    marcas: List[Marca]
+    total_count: int

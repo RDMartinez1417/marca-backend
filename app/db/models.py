@@ -6,7 +6,7 @@ import enum
 class EstadoMarca(str, enum.Enum):
     activo = "Activo"
     inactivo = "Inactivo"
-    pendiete = "Pendiente"
+    pendiente = "Pendiente"
 
 class Marca(Base):
     __tablename__ = "marcas"
